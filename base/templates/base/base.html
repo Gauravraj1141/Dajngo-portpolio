@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/awesome.css' %}">
+
+
+    <link rel="icon" href="{% static 'images/icon.png' %}" type="image/icon type">
+    <title>{% block title %} Bootstrap demo {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body class="bg-secondary">
+
+    <div class="container-fluid bg-secondary ">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class=" border-end border-2 border-warning h-100 text-center">
+                    <img src="{% static 'images/grimg.jpg' %}" width="100px" alt="thumbnail"
+                        class="img-thumbnail rounded-circle mt-5" style="height:100px;">
+                    <div class="name mt-3 text-white" style="font-family: 'Graduate', cursive;">
+                        <h3>Gaurav Rajput</h3>
+                        <hr>
+                    </div>
+
+                    <nav class="nav flex-column text-center textb ">
+                        <a href="{% url 'home' %}" class="nav-link {{ home }}">Home</a>
+                        <a href="{% url 'skills' %}" class="nav-link {{ skills }} ">Skill-Set</a>
+                        <a href="{% url 'services' %}" class="nav-link {{ services }}">Services</a>
+                        <a href="{% url 'contact' %}" class="nav-link {{ contact }}">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <!--Here we create our home,services , skilles in diff pages only this code need to write
+                -->
+                {% block homecontent %}
+
+                {% endblock homecontent %}
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    {% block body %}
+
+    {% endblock body %}
+
+
+    {% comment %} here we add theree files from bootstrap and jquery is original website {% endcomment %}
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    {% comment %} it is for font awesome {% endcomment %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% comment %} font awesome link here {% endcomment %}
+    <script src="{% static 'js/awesome.js' %}"></script>
+
+</body>
+
+</html>

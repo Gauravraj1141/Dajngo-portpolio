@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Geo&family=Graduate&family=Kameron&display=swap');
+
+
+#image {
+    border-radius: 22px;
+    box-shadow: 6px 9px 64px -7px #3ebdc5;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container-fluid {
+    min-height: 100%;
+}
+
+
+/* services css  */
+.services {
+
+    box-shadow: 2px 2px 12px 2px #0436ff;
+}
+
+.services:hover {
+    box-shadow: 2px 2px 13px 2px #03ff10;
+
+}
+
+
+
+a.nav-link {
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+a.nav-link:hover {
+    color: rgb(10, 1, 1);
+    font-size: 22px;
+    background-color: rgb(255, 255, 83);
+}
+
+a.nav-link.active {
+    color: rgb(10, 1, 1);
+    font-weight: bold;
+    background-color: rgb(27, 243, 15);
+}
+
+.green {
+    color: rgb(30, 255, 0);
+}

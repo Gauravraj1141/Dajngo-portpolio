@@ -1,0 +1,58 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+
+{% block title %}
+{{ block.super }}
+HOME
+{% endblock title %}
+
+
+{% block homecontent %}
+<div class="container">
+    <div class="text-center mt-5 rounded-3">
+        <img src="{% static 'images/grimg.jpg' %}" id="image" alt="profile" width="250px" height="250px">
+    </div>
+    <div class=" text-white font-weight-bold mt-5" style="font-family: cursive;">
+        <h1>Hello,</h1>
+    </div>
+    <div class="text-white mt-3 text-center" style="font-family: Kameron ">
+        <p style="text-indent:100px; font-size:20px">
+            I am <b class='text-warning'> Gaurav Rajput</b> having good knowledge of Web Developement in Python/Django.
+            I
+            have been completed my graduation from mjpru university at 2020.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p style="font-size:20px">
+            I am having good knowledge of Web Developement in Python/Django. I
+            have been completed my graduation from mjpru university at 2020.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus perferendis harum magni
+            possimus vitae? Quia, accusamus explicabo voluptas, fuga ad praesentium minima accusantium, est mollitia
+            aperiam
+            hic impedit dignissimos?
+        </p>
+        <p style=" font-size:20px">
+            heyrksf Gaurav Rajput</b> having good knowledge of Web Developement in Python/Django. I
+            have been completed my graduation from mjpru university at 2020.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p style=" font-size:20px">
+            heyrksf Gaurav Rajput</b> having good knowledge of Web Developement in Python/Django. I
+            have been completed my graduation from mjpru university at 2020.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+    </div>
+
+
+    <div class="buttons my-5 text-center">
+
+        <a href="{% url 'contact' %}"><button class="btn btn-outline-warning mx-3">Hire Me</button></a>
+        <a href="{% url 'contact' %}"><button class="btn btn-outline-success">Contact</button></a>
+    </div>
+</div>
+
+
+</div>
+
+
+
+{% endblock homecontent %}

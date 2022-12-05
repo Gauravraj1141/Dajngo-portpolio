@@ -1,0 +1,73 @@
+{% extends 'base/base.html' %}
+
+{% block homecontent %}
+
+<div class="container">
+
+    <h1 class="text-warning border-bottom mt-5">Contact Me</h1>
+    <div class="row text-light mt-5">
+
+        <div class="col-sm-8 my-5">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+                <div class="col-md-12">
+                    <label for="inputCity" class="form-label">Tell Us</label>
+                    <textarea name="text" id="inputcity" class="form-control" cols="30" rows="5"></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4  my-5">
+            <div class="location  text-center my-3 ">
+                <i class="fa-solid fa-location-dot text-warning fa-2x"></i>
+                <p>Najibabad,Bijnor,India</p>
+            </div>
+            <div class="phone  text-center my-5 ">
+                <i class="fa fa-solid fa-phone text-warning fa-2x"></i>
+                <p>+91 6395463912</p>
+            </div>
+            <div class="phone  text-center my-5 ">
+                <a href="https://www.linkedin.com/in/gaurav-rajput1141/"> <i
+                        class="fa-brands fa-linkedin  text-warning fa-2x"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+<div class="row  text-center my-5">
+    <div class="col my-5">
+        <a href="https://twitter.com/GauravR1141" target="_blank"><i
+                class="fa-brands fa-twitter mx-3 fa-2x text-light"></i></a>
+        <a href="https://github.com/Gauravraj1141" target="_blank"><i
+                class="fa-brands fa-github  mx-3 fa-2x text-light"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100048342071368" target="_blank"><i
+                class="fa-brands fa-facebook  mx-3 fa-2x text-light"></i></a>
+        <a href="https://www.instagram.com/sarcastic_gaurav_1141/" target="_blank"> <i
+                class="fa-brands fa-instagram  mx-3 fa-2x text-light"></i></a>
+
+
+    </div>
+</div>
+</div>
+
+{% endblock homecontent %}
